@@ -26,7 +26,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Andres Ross</h1>
-								<p>Undergraduate student at McGill University studying honors mathematics and physics.</p>
+								<p>Mathematical Engineering - MAchine Learning - Quantitative life sciences</p>
 							</div>
 						</div>
 						<nav>
@@ -47,13 +47,13 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>I am an undergraduate student at McGill university studying math and physics. I am excited about using different mathematical and computational methods to describe things around us. I am particularly excited about using parameter reduction, differential equations, machine learning and other statistical methods to describe complex systems. (new blurb comming up) </p>
-
-								<p>My work so far has been in both the areas of Biophysics and Medical Physics, always doing projects deeply involving computational modeling. </p>
-
+								<span class="image main"><img src="images/introPic.jpg" alt="" /></span>
 								<p>
-								I was born in Mexico City and traveled to Canada at the end of my High School. Outside of Physics I enjoy running, basketball and playing guitar. 
+									Hi! My name is Andres Ross and I am a Mexican born mathematician and physicist. I love coding, using techniques from applied mathematics and addressing problems in diverse settings. I will graduate with a B.S in honours Mathematics and Physics in may 2020</p>
+								<p>	
+									Having worked in multiple interdisciplinary projects I believe links between different fields to be key in 21st-century research. I have experience in a wide variety of fields such as mathematical engineering, biophysics, medical physics, and theoretical cosmology. </p>
+								<p>	
+									I worked independently and in collaborations with an emphasis on computation, and aspire to be at the intersection of mathematics, engineering, biology, and physics. </p> 
 								 <!--By the way, check out my <a href="#work">awesome work</a>.</p>
 								<p>--></p>
 							</article>
@@ -62,16 +62,21 @@
 							<article id="Experience">
 								<h2 class="major">Experience</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<h3 class="major">Honors Math Research Proect </h3>
+								<h3 class="major">Astrophysics Research (Dr. Cline)</h3>
+								<p>
+									Along with a collegue we studied the maximal amount of dark matter allowed in neutron stars given the current experimental data and standard equations of state. To do this we treated dark matter as a mirror copy of the neutron. Using the theory for degenerate Fermi gases we incorporated dark matter into the equations for neutron stars, and then used Runge-Kutta methods to get results. We were able to show that for a polytropic equation of state neutron stars cannot contain more than 16% dark matter. 
+								</p>
+								<h3 class="major">Honors Math Research Project (Dr. Nave, Dr. Navarra)</h3>
 								<p>"Finite Difference and Discrete Event Simulation Applied To Copper Smelter Dynamics"</p>
-								<p> Used Runge-Kutta methods and Newton iterations to model complex quemical reactions inside the furnace. Focused on the interplay of discrete events in the factory and continous events happening inside the furnace. Learned to use discrete event simulation to model a factory, and investigated the use of Runge-Kutta felberg adaptive time step for error control.</p>
+								<p>  The objective was precise quantitative modelling of a copper smelter. Such a model is important since it reduces the risk when investing large capital into smelter equipment. The main issue with previous models is accounting for the interplay of discrete events in the factory, with continuous dynamics inside the furnaces. This was fixed by incorporating the model into a discrete event simulation. To solve the continuous dynamics, I used Runge-Kutta methods on the thermochemical equations describing the furnace. These have no closed form solution, so at each iteration of the method Newton iterations would be done until convergence. To incorporate this into the discrete event simulation, thresholds like maximal temperatures and chemical concentrations where placed to trigger events. For example, during the smelting process slag forms and needs to be removed, this must be done when a certain concentration is reached. I modeled this concentration as a threshold which would trigger an event. To accommodate the desired precision, calculation of threshold crossing events needed to improve without increasing computational cost. I used Richardson extrapolation to solve this issue and showed that the errors in the estimation converge to zero. Part of my work was published in the proceedings of Philip Mackey Honorary Symposium along with the multiphysics simulations done by other collaborators. This solution would have been impossible without the joint expertise of mathematicians and engineers. It was my background in physics and mathematics that allowed me to act as a bridge in this collaboration, which really taught me the importance of multidisciplinary training. </p>
 								<h3 class="major">The Ottawa Hospital Research Institute</h3>
 								<p>"Predicting CyberKnife tracking errors from external breathing features"</p>
-								<p>I used an array of techniques to predict the errors generated by the CyberKnife treatment for liver cancer patients. These techniques included signal processing, statistical analysis and machine learning as well as python coding. I also coded a real time interface for adaptive breathing control for patients to use during treatment. I spent most time looking for significant features, documenting and making the codes robust for use by others.
+								<p>
+								Liver cancer radiation therapy is complex due to the deformability of abdominal organs, consequently real time prediction of errors during treatment is desired. So, I successfully developed a machine learning algorithm from the ground up that predicts errors with 84% accuracy. For this, I used techniques like support vector machines, clustering, time series analysis, and statistical features. I also developed a user-friendly interface for adaptive breathing control to be used by patients, to ease treatment. This research was published for the 61st American Association of Physicists in Medicine Annual Meeting an accomplishment I am particularly proud of. 
 								</p>
-								<h3 class="major">Biophysics Research with Dr. Paul François </h3>
+								<h3 class="major">Biophysics Research (Dr. François) </h3>
 								<p>"Exploring the use of Mutual Information as a Fitness Function for Parameter Reduction"</p>
-								<p>I carried out my own research project where I simulated the immune system in through differential equations and linear algebra. The project consisted on exploring the use of the Mutual Information as a function to simplify complicated biological networks. I spent most time programing, debugging and mathematically analyzing the results. </p>
+								<p>The aim of my project was understanding mutual information as a cost function for parameter reduction in an immune detection model. To determine the leading parameters in the dynamics I reduced the dimensionality of the system and analyzed its behavior. Since this relied heavily on the cost function it was important to find an optimal choice. So, I numerically analyzed the behavior of the eigenvalues in the system, which was represented by coupled differential equations, and showed that the mutual information performs better than other cost functions.  </p>
 							</article>
 
 						<!-- About -->
@@ -83,7 +88,6 @@
 								  <li>Python (SkLearn, SciPy, Pandas)</li>
 								  <li>Java</li>
 								  <li>HTML (basic knowledge)</li>
-								  <li>MATLAB</li>
 								</ul>
 								<h3 class="major">Analytics</h3>
 								<ul>
@@ -109,10 +113,10 @@
 							<article id="contact">
 								<h2 class="major">Contact</h2>
 								<p>
-								andres.ross@mail.mcgill.ca
+								andresrossb@gmail.com
 								</p>
 								<p>
-								Cel: (438)-928-8712
+								Cell: (438)-928-8712
 								</p>
 								<!--
 								<form method="post" action="#">
